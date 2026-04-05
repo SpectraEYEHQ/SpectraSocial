@@ -667,9 +667,6 @@ Core entity relationships:
 - 🗄️ MySQL 8.0+
 
 <p align="center">
-
-Built with ❤️ by the SpectraEYE Team
-
-*Documentation generated for SpectraSocial v2.0.0 — 2026*
-
+  **Built with ❤️ by the SpectraEYE Team**
 </p>
+
