@@ -23,6 +23,7 @@
 - [⏱️ Background Services](#️-background-services)
 - [🏗️ Technical Architecture](#️-technical-architecture)
 - [🚢 Deployment and Infrastructure](#-deployment-and-infrastructure)
+- [📄 License](#-license)
 
 ---
 
@@ -751,6 +752,14 @@ Core entity relationships:
 ### 📋 Prerequisites
 - 🟢 Node.js v18+
 - 🗄️ MySQL 8.0+
+
+---
+
+## 📄 License
+
+Distributed under the Proprietary License. See `LICENSE` for more information.
+
+---
 
 <p align="center">
   **Built with ❤️ by the SpectraEYE Team**
