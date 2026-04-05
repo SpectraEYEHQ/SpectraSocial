@@ -82,7 +82,7 @@ Stories support emoji reactions, view tracking (who watched each story), and dir
 The platform automatically analyzes feed content and extracts trending hashtags and topics. An AI-powered post idea generator can suggest post topics based on selected categories, helping users contribute to organizational discussions.
 
 ---
-
+```mermaid
 flowchart LR
   USER["👤 User"] --> CHANNELS["🗂️ Channels"];
   CHANNELS --> POSTS["📝 Posts"];
@@ -108,7 +108,7 @@ flowchart LR
   STORIES --> VIEWS["👁️ View Tracking"];
   STORIES --> STORYREACT["😄 Emoji Reactions"];
   STORIES --> STORYDM["💬 DM Replies"];
-
+```
 ---
 
 ## 💬 Direct Messaging
@@ -169,7 +169,7 @@ An internal trading platform for buying, selling, and auctioning items within th
 - 🔖 **Saved items** - Bookmark marketplace items for later.
 
 ---
-
+```mermaid
 flowchart TB
   HUB["🧩 Organizational Activity Hub"];
 
@@ -204,7 +204,7 @@ flowchart TB
   HUB --> EVENTS;
   HUB --> JOBS;
   HUB --> MARKET;
-
+```
   ---
 
 ## 👤 User Profiles and Networking
@@ -248,7 +248,7 @@ Automated recognition system that rewards user engagement:
 - 🔄 **Automatic recalculation** - Badges can be recalculated on demand.
 
 ---
-
+```mermaid
 flowchart LR
   PROFILE["👤 User Profile"] --> BASIC["📋 Basic Info"];
   PROFILE --> SKILLS["🛠️ Skills"];
@@ -272,7 +272,7 @@ flowchart LR
   BADGES --> WINDOW["⏰ Time-Window Rules"];
   BADGES --> BADMIN["🎨 Badge Management"];
   BADGES --> RECALC["🔄 Recalculation"];
-
+```
   ---
 
 ## ⚙️ Organization Administration
