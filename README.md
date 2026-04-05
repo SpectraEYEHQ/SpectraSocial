@@ -1,10 +1,5 @@
 # 🌐 SpectraSocial - Enterprise Social Networking Platform
 
-> **Version:** 2.0.0 (SOC 2 & ISO 27001 Ready)
-> **Status:** ✅ Production Ready
-
-SpectraSocial is a multi-tenant enterprise social networking platform that unifies internal communication, professional networking, talent acquisition, and marketplace collaboration into a single secure environment. Each organization operates in a fully isolated tenant, with its own users, data, roles, and administrative controls.
-
 ---
 
 ## 📑 Table of Contents
