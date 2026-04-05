@@ -83,6 +83,34 @@ The platform automatically analyzes feed content and extracts trending hashtags 
 
 ---
 
+flowchart LR
+  USER["👤 User"] --> CHANNELS["🗂️ Channels"];
+  CHANNELS --> POSTS["📝 Posts"];
+  CHANNELS --> STORIES["📖 Stories"];
+  CHANNELS --> TRENDING["📈 Trending Topics"];
+
+  POSTS --> STANDARD["📄 Standard Post"];
+  POSTS --> POLL["📊 Poll"];
+  POSTS --> QA["❓ Q&A"];
+
+  POSTS --> REACT["😍 Reactions"];
+  POSTS --> COMMENTS["💬 Threaded Comments"];
+  POSTS --> SHARE["🔗 Sharing"];
+  POSTS --> PIN["📌 Pin"];
+  POSTS --> SAVE["🔖 Bookmark"];
+  POSTS --> TAGS["#️⃣ Hashtags"];
+
+  STORIES --> MEDIA["🖼️ Media Story"];
+  STORIES --> TEXT["✍️ Text Story"];
+  STORIES --> STORYPOLL["📊 Poll Story"];
+  STORIES --> STORYQA["❓ Q&A Story"];
+
+  STORIES --> VIEWS["👁️ View Tracking"];
+  STORIES --> STORYREACT["😄 Emoji Reactions"];
+  STORIES --> STORYDM["💬 DM Replies"];
+
+---
+
 ## 💬 Direct Messaging
 
 One-to-one real-time conversations with the following capabilities:
@@ -142,6 +170,43 @@ An internal trading platform for buying, selling, and auctioning items within th
 
 ---
 
+flowchart TB
+  HUB["🧩 Organizational Activity Hub"];
+
+  subgraph EVENTS["📅 Events & Calendar"]
+    EVENTCRUD["📋 Event Details"];
+    RSVP["✋ RSVP Tracking"];
+    REM["⏰ Reminders"];
+    EPOLL["📊 Event Polls"];
+    EINV["✉️ Invitations"];
+    ESHARE["🔗 Event Sharing"];
+  end
+
+  subgraph JOBS["💼 Careers & Job Board"]
+    JOBPOST["📝 Job Posting"];
+    APPLY["🚀 Easy Apply"];
+    TRACK["📊 Application Tracking"];
+    RECOMMEND["🤝 Recommendations"];
+    SAVEJOB["🔖 Saved Jobs"];
+    REVIEW["👨‍💼 Admin Review"];
+  end
+
+  subgraph MARKET["🛒 Internal Marketplace"]
+    FIXED["💰 Fixed Price"];
+    AUCTION["🔨 Auction"];
+    IMAGES["📸 Item Management"];
+    APPROVAL["✅ Approval Workflow"];
+    BIDS["💵 Bidding"];
+    MSHARE["🔗 Marketplace Sharing"];
+    SAVEITEM["🔖 Saved Items"];
+  end
+
+  HUB --> EVENTS;
+  HUB --> JOBS;
+  HUB --> MARKET;
+
+  ---
+
 ## 👤 User Profiles and Networking
 
 ### 🪪 Profile Features
@@ -183,6 +248,32 @@ Automated recognition system that rewards user engagement:
 - 🔄 **Automatic recalculation** - Badges can be recalculated on demand.
 
 ---
+
+flowchart LR
+  PROFILE["👤 User Profile"] --> BASIC["📋 Basic Info"];
+  PROFILE --> SKILLS["🛠️ Skills"];
+  PROFILE --> CERTS["📜 Certifications"];
+  PROFILE --> ACH["🏆 Achievements"];
+  PROFILE --> SPEC["🎯 Specializations"];
+  PROFILE --> TEACH["📚 Teach / Learn"];
+  PROFILE --> FEEDBACK["💬 Profile Feedback"];
+  PROFILE --> VIS["👁️ Visibility Controls"];
+  PROFILE --> BADGES["🏅 Earned Badges"];
+  PROFILE --> ACTIVITY["📊 Recent Activity"];
+
+  PROFILE --> CONNECTIONS["🤝 Social Connections"];
+  CONNECTIONS --> FOLLOW["➕ Follow"];
+  CONNECTIONS --> REQUESTS["🔒 Follow Requests"];
+  CONNECTIONS --> MANAGE["👥 Follower Management"];
+  CONNECTIONS --> BLOCK["🚫 Blocking"];
+  CONNECTIONS --> LISTS["📋 Connection Lists"];
+
+  BADGES --> RULES["📊 Metric-Based Rules"];
+  BADGES --> WINDOW["⏰ Time-Window Rules"];
+  BADGES --> BADMIN["🎨 Badge Management"];
+  BADGES --> RECALC["🔄 Recalculation"];
+
+  ---
 
 ## ⚙️ Organization Administration
 
